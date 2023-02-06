@@ -163,7 +163,11 @@ nav .menu {
     font-family: 'El Messiri', sans-serif;
     direction:rtl;
     margin-right: 50px;
+    font-size: 19px;
 }
 .sec1 .img-sec1{
     margin-left: 50px;
+}
+.sec1 .img-sec1 img{
+    width: 400px;
 }
