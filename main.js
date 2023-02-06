@@ -12,3 +12,15 @@ MenuIcon.onclick = function() {
 
 // End Menu
 
+// Start Header
+let header = document.querySelector("nav");
+window.onscroll = function() {
+    console.log(window.scrollY)
+    if(window.scrollY >= 100) {
+        header.style.backgroundColor = "#33363e";
+    }
+    else {
+        header.style.backgroundColor = "transparent";
+    }
+}
+// End Header

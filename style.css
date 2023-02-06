@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
 
 img , .logo{
-    user-select: none
+    user-select: none;
 }
 
 *{
@@ -170,4 +170,10 @@ nav .menu {
 }
 .sec1 .img-sec1 img{
     width: 400px;
+}
+.sec1 .scroll {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
 }
