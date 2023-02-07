@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
-
+/* font-family: 'Cairo', sans-serif; */
 *{
     padding: 0;
     margin: 0;
@@ -12,7 +12,7 @@
 }
 body{
     font-family: montserrat;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     background-color: #eee;
     height: 400vh;
 }
@@ -174,18 +174,28 @@ nav .menu {
     transform: translateX(-50%);
 }
 .sec2 {
-    height:calc( 100vh + 80px);
+    min-height:calc( 100vh + 80px);
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    position: relative;
+    padding-bottom: 30px;
+}
+.sec2 .father-sec2-title {
+    width: 100%;
+    padding: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .sec2 .sec2-title {
-    position:absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 10px;
     font-size: 30px;
     font-family: 'Cairo', sans-serif;
     font-weight: 900;
-    margin-top: 80px;
+    margin:80px 0 0 0;
     color: #333333;
+    position: relative;
 }
 .sec2 .sec2-title::before {
     content: "";
@@ -206,4 +216,35 @@ nav .menu {
     left: 50%;
     transform: translateX(-50%);
     bottom: -20px;
+}
+.sec2 .father-maps {
+    width: 100%;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-gap: 30px;
+    place-items: center;
+}
+.father-maps .map {
+    padding: 10px;
+    background-color: #ccc;
+}
+.map .head{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 900;
+}
+.head .dot{
+    color: red;
+    font-size: 20px;
+}
+.sec3 {
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0.888);
 }

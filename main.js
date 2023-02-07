@@ -15,7 +15,6 @@ MenuIcon.onclick = function() {
 // Start Header
 let header = document.querySelector("nav");
 window.onscroll = function() {
-    console.log(window.scrollY)
     if(window.scrollY >= 100) {
         header.style.backgroundColor = "#33363e";
     }
