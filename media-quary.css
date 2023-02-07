@@ -135,7 +135,13 @@
 @media (max-width:400px) {
     .sec1 .per-info {
         font-size: 17px;
-        padding: 5px;
+        padding: 20px;
+    }
+}
+@media (max-width:320px) {
+    .sec1 .per-info {
+        font-size: 17px;
+        padding: 10px;
     }
 }
 @media (max-width:300px) {
