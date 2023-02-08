@@ -169,6 +169,7 @@ nav .menu {
     margin-bottom: 10px;
 }
 .per-info .next-sec {
+    z-index: 9999;
     width: 200px;
     height: 50px;
     padding: 5px;
