@@ -10,7 +10,7 @@
         font-size: 16px;
     }
 }
-@media (max-width: 708px){
+@media (max-width: 1000px){
     nav ul li{
         padding: 25px 0;
         display: block;
@@ -18,9 +18,22 @@
         line-height: 30px;
         transition: 0.2s linear;
     }
-    nav ul li:hover{
-        background-color: rgba(0, 0, 0, 0.2);
-        /* backdrop-filter: blur(100px); */
+    nav ul li::before{
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        background-color: #eee;
+        bottom: 0;
+        transition: 0.3s ease-in-out;
+        left:  0;
+    }
+    nav ul li:hover:before{
+        width: 100%;
+        box-shadow: 0 0px 9px #fff;
+    }
+    nav ul li:hover > a{
+        color: white;
     }
     .checkbtn{
         display: block;
@@ -43,9 +56,6 @@
     }
     #check:checked ~ ul{
         left: 0;
-    }
-    nav ul li::before{
-        bottom: -10px;
     }
 }
 @media (max-width:400px) {
@@ -113,6 +123,9 @@
     }
 }
 @media (max-width:930px) {
+    .sec1 .per-info .next-sec {
+        display: inline-block;
+    }
     .sec1 {
         justify-content: center;
     }
@@ -152,6 +165,9 @@
 }
 
 @media (max-width:480px) {
+    .head .dot, .head .zone{
+        font-size: 17px;
+    }    
     .sec2 .father-maps {
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     }
@@ -161,6 +177,9 @@
     }
 }
 @media (max-width:380px) {
+    .head .dot, .head .zone{
+        font-size: 15px;
+    }    
     .sec2 .father-maps {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
@@ -179,6 +198,9 @@
     }
 }
 @media (max-width:280px) {
+    .head .dot, .head .zone{
+        font-size: 10px;
+    }
     .sec2 .father-maps {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }

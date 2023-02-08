@@ -13,8 +13,12 @@ MenuIcon.onclick = function() {
 // End Menu
 
 // Start Header
+
+let toTop = document.querySelector(".up");
 let header = document.querySelector("nav");
 window.onscroll = function() {
+    this.scrollY >= 200 ? toTop.classList.add("show") : toTop.classList.remove("show");
+
     if(window.scrollY >= 100) {
         header.style.backgroundColor = "#33363e";
     }
@@ -22,4 +26,12 @@ window.onscroll = function() {
         header.style.backgroundColor = "transparent";
     }
 }
+
+toTop.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+};
+
 // End Header

@@ -158,8 +158,55 @@ nav .menu {
     color: #fff;
     font-family: 'El Messiri', sans-serif;
     direction:rtl;
-    margin-right: 50px;
+    margin:0 50px 30px 0 ;
     font-size: 19px;
+    position: relative;
+}
+.sec1 .per-info a{
+    margin-bottom: 10px;
+}
+.sec1 .per-info h1{
+    margin-bottom: 10px;
+}
+.per-info .next-sec {
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    font-size: 18px;
+    background-color: #373737;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+.next-sec p {
+    mix-blend-mode: difference;
+    color: white;
+}
+.per-info .next-sec::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 45px;
+    right: auto;
+    bottom: auto;
+    top: 0;
+    left: 1px;
+    background-color: #333333;
+    transition: 0.3s ease-in-out;
+}
+.per-info .next-sec:hover:before {
+    width: 195px;
+    /* right: auto;
+    bottom: auto; */
+}
+.per-info .next-sec:hover {
+    box-shadow: 0 0 29px #5e5e5e;
 }
 .sec1 .img-sec1{
     margin-left: 50px;
@@ -173,11 +220,9 @@ nav .menu {
     left: 50%;
     transform: translateX(-50%);
 }
+
 .sec2 {
     min-height:calc( 100vh + 80px);
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
     position: relative;
     padding-bottom: 30px;
 }
@@ -241,10 +286,32 @@ nav .menu {
     font-weight: 900;
 }
 .head .dot{
-    color: red;
     font-size: 20px;
 }
 .sec3 {
     height: 100vh;
     background-color: rgba(255, 0, 0, 0.888);
+}
+.up {
+    position: fixed;
+    bottom: 10px;
+    right: -50px;
+    background-color: #333333;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Arial, Tahoma;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.up img {
+    width: 50px;
+}
+.up.show {
+    right: 10px;
 }
