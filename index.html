@@ -19,6 +19,7 @@
 </head>
 <body>
     <nav>
+        <div class="line-basic"></div>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="menu">
@@ -34,8 +35,8 @@
         <ul>
             <li><a class="active" href="#sec1" >الواجهة الرئسية</a></li>
             <li><a class="active" href="#sec2" >السناتر</a></li>
-            <li><a href="#sec4" >احجز الان</a></li>
-            <li><a href="#sec3" >تواصل معنا</a></li>
+            <li><a href="#sec3" >المواعيد</a></li>
+            <li><a href="#sec4" >الاوائل</a></li>
         </ul>
     </nav>
     <div class="sec1" id="sec1">
@@ -81,7 +82,52 @@
         </div>
     </div>
     <div class="sec3" id="sec3">
-
+        <div class="father-sec2-title">
+            <div class="sec2-title">المواعيد</div>
+        </div>
+        <div class="selcet">
+            <label for="#selcet">اختر صفك</label>
+            <select id="select">
+                <option>اختر صفك</option>
+                <option data-count="0">الصف الاول الاعدادي</option>
+                <option data-count="1">الصف الثاني الاعدادي</option>
+                <option data-count="2">الصف الثالث الاعدادي</option>
+                <option data-count="3">الصف الاول الثانوي</option>
+                <option data-count="4">الصف الثاني الثانوي</option>
+                <option data-count="5">الصف الثالث الثانوي</option>
+            </select>
+            <!-- <button class="submit">submit</button> -->
+        </div>
+        <div class="table">
+            <div class="row">
+                <span class="day-name">السبت</span>
+                <span class="time">المعاد</span>
+            </div>
+            <div class="row">
+                <span class="day-name">الاحد</span>
+                <span class="time">المعاد</span>
+            </div>
+            <div class="row">
+                <span class="day-name">الاثنين</span>
+                <span class="time">المعاد</span>
+            </div>
+            <div class="row">
+                <span class="day-name">الثلاثاء</span>
+                <span class="time">المعاد</span>
+            </div>
+            <div class="row">
+                <span class="day-name">الاربعاء</span>
+                <span class="time">المعاد</span>
+            </div>
+            <div class="row">
+                <span class="day-name">الخميس</span>
+                <span class="time">المعاد</span>
+            </div>
+            <div class="row">
+                <span class="day-name">الجمعة</span>
+                <span class="time">المعاد</span>
+            </div>
+        </div>
     </div>
     <span class="up">
         <img src="images/to-top.gif" >

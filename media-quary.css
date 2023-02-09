@@ -145,6 +145,12 @@
         padding: 15px;
     }
 }
+@media (max-width:440px) {
+    /* .per-info .next-sec {
+        width: 150px;
+        font-size: 15px;
+    } */
+}
 @media (max-width:400px) {
     .sec1 .per-info {
         font-size: 17px;

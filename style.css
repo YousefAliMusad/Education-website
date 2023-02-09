@@ -10,6 +10,17 @@
     background-attachment: fixed;
     user-select: none;
 }
+.sec2,.sec3,.sec4 {
+    position: relative;
+}
+.sec2::before,.sec3::before,.sec4::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #262626;
+    bottom: 0;
+}
 body{
     font-family: montserrat;
     /* overflow-x: hidden; */
@@ -26,6 +37,26 @@ nav{
     top: 0;
     transition: 0.2s linear all;
     z-index: 999999999;
+}
+nav .line-basic {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 7px;
+    background-color: #555;
+    transition: 0.2s linear;
+}
+nav .line-basic::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #777;
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 nav .logo{
     cursor: pointer;
@@ -174,37 +205,46 @@ nav .menu {
     height: 50px;
     padding: 5px;
     font-size: 18px;
-    background-color: #373737;
+    background-color: #383838;
     border: 2px solid #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
     font-family: 'Cairo', sans-serif;
     cursor: pointer;
     transition: 0.3s ease-in-out;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 .next-sec p {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     mix-blend-mode: difference;
     color: white;
 }
 .per-info .next-sec::before {
     content: "";
     position: absolute;
-    width: 0;
-    height: 45px;
+    width: 20px;
+    height: 20px;
     right: auto;
     bottom: auto;
-    top: 0;
-    left: 1px;
-    background-color: #333333;
-    transition: 0.3s ease-in-out;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #26262600;
+    transition: 0.6s ease-in-out;
+    border-radius: 50%;
 }
 .per-info .next-sec:hover:before {
-    width: 195px;
-    /* right: auto;
-    bottom: auto; */
+    border-radius: 10px;
+    width: 300px;
+    height: 60px;
+    background-color: #262626;
 }
 .per-info .next-sec:hover {
     box-shadow: 0 0 29px #5e5e5e;
@@ -227,7 +267,7 @@ nav .menu {
     position: relative;
     padding-bottom: 30px;
 }
-.sec2 .father-sec2-title {
+.father-sec2-title {
     width: 100%;
     padding: 100px;
     height: 100px;
@@ -235,7 +275,7 @@ nav .menu {
     align-items: center;
     justify-content: center;
 }
-.sec2 .sec2-title {
+.sec2-title {
     font-size: 30px;
     font-family: 'Cairo', sans-serif;
     font-weight: 900;
@@ -243,7 +283,7 @@ nav .menu {
     color: #333333;
     position: relative;
 }
-.sec2 .sec2-title::before {
+.sec2-title::before {
     content: "";
     position: absolute;
     width: 80px;
@@ -253,7 +293,7 @@ nav .menu {
     transform: translateX(-50%);
     bottom: -5px;
 }
-.sec2 .sec2-title::after {
+.sec2-title::after {
     content: "";
     position: absolute;
     width: 130px;
@@ -289,10 +329,6 @@ nav .menu {
 .head .dot{
     font-size: 20px;
 }
-.sec3 {
-    height: 100vh;
-    background-color: rgba(255, 0, 0, 0.888);
-}
 .up {
     position: fixed;
     bottom: 10px;
@@ -315,4 +351,7 @@ nav .menu {
 }
 .up.show {
     right: 10px;
+}
+.sec3 {
+    height: 100vh;
 }
