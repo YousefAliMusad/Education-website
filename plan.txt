@@ -2,3 +2,81 @@
 2 -- جمع معلومات من وسائل التواصل الاجتماعي | اخذ موقع السنتر من خرايط جوجل
 3 -- اخذ صور تعليمية
 3 -- متعدد اللغات
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[
+    {
+        "yearname": "prep1",
+        "saturday":"6 P.M",
+        "sunday":"6 P.M",
+        "monday":"6 P.M",
+        "tuesday":"6 P.M",
+        "wednesday":"6 P.M",
+        "thursday":"6 P.M",
+        "friday":"6 P.M"
+    },
+    {
+        "yearname": "prep2",
+        "saturday":"6 P.M",
+        "sunday":"6 P.M",
+        "monday":"6 P.M",
+        "tuesday":"6 P.M",
+        "wednesday":"6 P.M",
+        "thursday":"6 P.M",
+        "friday":"6 P.M"
+    },
+    {
+        "yearname": "prep3",
+        "saturday":"6 P.M",
+        "sunday":"6 P.M",
+        "monday":"6 P.M",
+        "tuesday":"6 P.M",
+        "wednesday":"6 P.M",
+        "thursday":"6 P.M",
+        "friday":"6 P.M"
+    },
+    {
+        "yearname": "Sec1",
+        "saturday":"6 P.M",
+        "sunday":"6 P.M",
+        "monday":"6 P.M",
+        "tuesday":"6 P.M",
+        "wednesday":"6 P.M",
+        "thursday":"6 P.M",
+        "friday":"6 P.M"
+    },
+    {
+        "yearname": "sec2",
+        "saturday":"6 P.M",
+        "sunday":"6 P.M",
+        "monday":"6 P.M",
+        "tuesday":"6 P.M",
+        "wednesday":"6 P.M",
+        "thursday":"6 P.M",
+        "friday":"6 P.M"
+    },
+    {
+        "yearname": "sec3",
+        "saturday":"6 P.M",
+        "sunday":"6 P.M",
+        "monday":"6 P.M",
+        "tuesday":"6 P.M",
+        "wednesday":"6 P.M",
+        "thursday":"6 P.M",
+        "friday":"6 P.M"
+    }
+]

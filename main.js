@@ -49,27 +49,59 @@ toTop.onclick = function () {
 
 
 // Start JSON
-let Time = document.querySelectorAll(".time")
-// let SubmitBtn = document.querySelector(".submit")
-let options = document.querySelectorAll("#select option")
-let myreq = new XMLHttpRequest();
+// let Time = document.querySelectorAll(".time")
+// // let SubmitBtn = document.querySelector(".submit")
+// let options = document.querySelectorAll("#select option")
+// let myreq = new XMLHttpRequest();
 
-myreq.onreadystatechange = function() {
-    if(this.readyState === 4&& this.status === 200) {
-        let times = JSON.parse(this.responseText);
-        check(times);
-    }
-}
-myreq.open("GET", "times.json", true);
-myreq.send();
+// myreq.onreadystatechange = function() {
+//     if(this.readyState === 4&& this.status === 200) {
+//         let times = JSON.parse(this.responseText);
+//         check(times);
+//     }
+// }
+// myreq.open("GET", "times.json", true);
+// myreq.send();
 
 
-function check(info) {
-    options.forEach((e)=> {
-        e.onclick = function() {
-            console.log("options")
-        }
-    })
-}
+// function check(info) {
+//     options.forEach((e)=> {
+//         e.onclick = function() {
+//             console.log("options")
+//         }
+//     })
+// }
 
 // End JSON
+
+
+
+let myrequest = new XMLHttpRequest();
+
+
+myrequest.onreadystatechange = function() {
+    if(this.readyState === 4 && this.status === 200) {
+        let grades = JSON.parse(this.responseText);
+        setas(grades, grades.length);
+    }
+    else {
+        console.log("unconected")
+    }
+}
+myrequest.open("GET", "grades.json", true);
+myrequest.send();
+
+function setas(grades, gradescount) {
+    let boxs = document.querySelector(".boxs");
+    for(let i = 0; i < gradescount ; i++) {
+        let box = document.createElement('a');
+        let boxP = document.createElement('p');
+        box.classList = `box${i}`;
+        for(let a = 7; i <= 12; a++) {
+            box.setAttribute("href" , `winers/grade${i}/index.html`)
+        }
+        boxP.innerHTML = grades[i][0]["grade"];
+        boxs.appendChild(box)
+        box.appendChild(boxP)
+    }
+}
