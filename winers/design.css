@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
+/* font-family: 'Cairo', sans-serif; */
+.father-sec2-title {
+    width: 100%;
+    padding: 100px 0 0 0;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec2-title {
+    font-size: 30px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 900;
+    margin:0;
+    color: #333333;
+    position: relative;
+}
+.sec2-title::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    background-color: #c6c6c6;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+}
+.sec2-title::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 5px;
+    background-color: #bfbebe;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+}
+.sec-f {
+    min-height:calc(100vh - 80px);
+    margin-top: 80px;
+    font-family: 'Cairo', sans-serif;
+    padding: 0 0 50px 0;
+}
+.firsts {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 30px;
+    place-items: center;
+    padding: 0 20px;
+}
+.firsts .stud{
+    width: 150px;
+    height: 250px;
+    background-color: #cacaca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.firsts .stud .badge{
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.firsts .stud .gold{
+    background-color: rgb(238, 203, 0);
+    outline: 4px solid goldenrod;
+}
+.firsts .stud .silver{
+    background-color: rgb(164, 164, 164);
+    outline: 4px solid rgb(120, 120, 120);
+}
+.firsts .stud .bronze{
+    background-color:rgb(255, 132, 0);
+    outline: 4px solid rgb(165, 91, 42);
+}
+.firsts .stud .bronze::before{
+    content: "3";
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+.firsts .stud .silver::before{
+    content: "2";
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+.firsts .stud .gold::before{
+    content: "1";
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+.firsts .stud img{
+    width: 100px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+.firsts .stud .name{
+    margin-bottom: 10px;
+}
+@media (max-width:400px) {
+    .sec2-title {
+        font-size: 25px;
+    }
+}
+@media (max-width:250px) {
+    .sec2-title {
+        font-size: 20px;
+    }
+}

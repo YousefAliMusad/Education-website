@@ -97,9 +97,7 @@ function setas(grades, gradescount) {
         let box = document.createElement('a');
         let boxP = document.createElement('p');
         box.classList = `box${i}`;
-        for(let a = 7; i <= 12; a++) {
-            box.setAttribute("href" , `winers/grade${i}/index.html`)
-        }
+        box.setAttribute("href" , `winers/grade${i}/index.html`)
         boxP.innerHTML = grades[i][0]["grade"];
         boxs.appendChild(box)
         box.appendChild(boxP)

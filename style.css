@@ -147,7 +147,6 @@ nav .menu {
 .menu span:nth-child(3) {
     width: 15px;
 }
-
 .menu span:nth-child(1).active {
     transform: translateY(11px) rotate(225deg);
 }
