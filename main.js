@@ -103,3 +103,7 @@ function setas(grades, gradescount) {
         box.appendChild(boxP)
     }
 }
+// let list = [7,6,8,4,0,1,3,4,2];
+// console.log(list.sort((f,s)=>{
+//     f.value - s.value;
+// }))

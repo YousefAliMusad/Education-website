@@ -49,8 +49,8 @@ function But(e, elen) {
         student.appendChild(name);
         student.appendChild(mark);
         mark.appendChild(CurrentMark);
+        student.appendChild(badge);
         mark.appendChild(TotalMark);
         firstEle.appendChild(student);
-        student.appendChild(badge);
     }
 }
