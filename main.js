@@ -19,7 +19,6 @@ MenuIcon.onclick = function() {
     })
     document.body.classList.toggle("active")
 }
-
 // End Menu
 
 // Start Header
@@ -46,30 +45,69 @@ toTop.onclick = function () {
 };
 
 // End Header
+// const btn = document.querySelector('.submit');
+// let table = document.querySelector('.table');
+
+// let selectfa = document.querySelector(".select");
+// let select = document.createElement("select");
+// select.id = "select";
+// selectfa.appendChild(select);
+// let myreq1 = new XMLHttpRequest();
+
+// myreq1.onreadystatechange = function() {
+//     if(this.readyState === 4&& this.status === 200) {
+//         let times = JSON.parse(this.responseText);
+//         addoptions(times , times.length);
+//         console.log(times[0][0]["grade"])
+//     }
+// }
+// myreq1.open("GET", "grades.json", true);
+// myreq1.send();
+// function addoptions(op,oplen) {
+//     for (let i = 0; i < oplen ; i++) {
+//         let option = document.createElement("option");
+//         // option.onclick = function() {
+//         //     console.log(option.dataset.count);
+//         // }
+//         btn.addEventListener("click", function(ev) {
+//             // ev.preventDefault();
+//             console.log(select.options.inner);
+//         })
+//         option.innerHTML = `${op[i][0]["grade"]}`;
+//         option.dataset.count = `${i}`
+//         select.appendChild(option);
+//     }
+// }
 
 
-// Start JSON
-// let Time = document.querySelectorAll(".time")
-// // let SubmitBtn = document.querySelector(".submit")
-// let options = document.querySelectorAll("#select option")
+// // Start JSON
 // let myreq = new XMLHttpRequest();
 
 // myreq.onreadystatechange = function() {
 //     if(this.readyState === 4&& this.status === 200) {
 //         let times = JSON.parse(this.responseText);
-//         check(times);
+//         check(times, times.length);
+//         console.log(times[0])
 //     }
 // }
-// myreq.open("GET", "times.json", true);
+// myreq.open("GET", "table.json", true);
 // myreq.send();
 
 
-// function check(info) {
-//     options.forEach((e)=> {
-//         e.onclick = function() {
-//             console.log("options")
-//         }
-//     })
+// function check(info, infolen) {
+//     for(let i = 0 ; i < infolen ; i++) {
+//         let row = document.createElement("div");
+//         row.className = "row"
+//         let dayname = document.createElement("span");
+//         dayname.innerHTML = `${info[i][`day${i}`][0]}`
+//         dayname.className = "day-name";
+//         let daytime = document.createElement("span");
+//         daytime.innerHTML = `${info[i][`day${i}`][1]}`
+//         daytime.className = "time";
+//         row.appendChild(dayname)
+//         row.appendChild(daytime)
+//         table.appendChild(row)
+//     }
 // }
 
 // End JSON
@@ -83,9 +121,6 @@ myrequest.onreadystatechange = function() {
     if(this.readyState === 4 && this.status === 200) {
         let grades = JSON.parse(this.responseText);
         setas(grades, grades.length);
-    }
-    else {
-        console.log("unconected")
     }
 }
 myrequest.open("GET", "grades.json", true);
@@ -103,7 +138,6 @@ function setas(grades, gradescount) {
         box.appendChild(boxP)
     }
 }
-// let list = [7,6,8,4,0,1,3,4,2];
-// console.log(list.sort((f,s)=>{
-//     f.value - s.value;
-// }))
+let footertime = document.querySelector("footer p span");
+let tm = new Date().getFullYear();
+footertime.innerHTML = tm
