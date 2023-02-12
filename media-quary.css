@@ -145,6 +145,7 @@
     }
     .sec1 {
         justify-content: center;
+        height: calc(95vh - 80px);
     }
     .sec1 .per-info {
         text-align: center;
