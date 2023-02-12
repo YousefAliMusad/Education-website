@@ -33,7 +33,7 @@ window.onscroll = function() {
         header.style.backgroundColor = "#33363e";
     }
     else {
-        header.style.backgroundColor = "transparent";
+        header.style.backgroundColor = "#444852";
     }
     myFunction();
 }
