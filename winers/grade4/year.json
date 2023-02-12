@@ -1,134 +1,26 @@
 [
     {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
+        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/Education-website/main/images/woman.png",
         "name" : "name here",
-        "mark" : "20",
+        "mark" : "0",
         "totalMark" : "20"
     },
     {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
+        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/Education-website/main/images/man.png",
         "name" : "name here",
-        "mark" : "19",
+        "mark" : "0",
         "totalMark" : "20"
     },
     {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
+        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/Education-website/main/images/woman.png",
         "name" : "name here",
-        "mark" : "18",
+        "mark" : "0",
         "totalMark" : "20"
     },
     {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
+        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/Education-website/main/images/man.png",
         "name" : "name here",
-        "mark" : "17",
-        "totalMark" : "20"
-    },
-    {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
-        "name" : "name here",
-        "mark" : "16",
-        "totalMark" : "20"
-    },
-    {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
-        "name" : "name here",
-        "mark" : "15",
-        "totalMark" : "20"
-    },
-    {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
-        "name" : "name here",
-        "mark" : "19",
-        "totalMark" : "20"
-    },
-    {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
-        "name" : "name here",
-        "mark" : "19",
-        "totalMark" : "20"
-    },
-    {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
-        "name" : "name here",
-        "mark" : "19",
-        "totalMark" : "20"
-    },
-    {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
-        "name" : "name here",
-        "mark" : "19",
-        "totalMark" : "0"
-    },
-    {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
-        "name" : "name here",
-        "mark" : "19",
-        "totalMark" : "20"
-    },
-    {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
-        "name" : "name here",
-        "mark" : "19",
-        "totalMark" : "20"
-    },
-    {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
-        "name" : "name here",
-        "mark" : "19",
-        "totalMark" : "20"
-    },
-    {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
-        "name" : "name here",
-        "mark" : "19",
-        "totalMark" : "20"
-    },
-    {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
-        "name" : "name here",
-        "mark" : "19",
-        "totalMark" : "20"
-    },
-    {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
-        "name" : "name here",
-        "mark" : "19",
-        "totalMark" : "20"
-    },
-    {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
-        "name" : "name here",
-        "mark" : "19",
-        "totalMark" : "20"
-    },
-    {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
-        "name" : "name here",
-        "mark" : "19",
-        "totalMark" : "20"
-    },
-    {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
-        "name" : "name here",
-        "mark" : "19",
-        "totalMark" : "20"
-    },
-    {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
-        "name" : "name here",
-        "mark" : "19",
-        "totalMark" : "20"
-    },
-    {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
-        "name" : "name here",
-        "mark" : "19",
-        "totalMark" : "20"
-    },
-    {
-        "avatar": "https://raw.githubusercontent.com/YousefAliMusad/my-images/main/user.png",
-        "name" : "name here",
-        "mark" : "19",
+        "mark" : "0",
         "totalMark" : "20"
     }
 ]
