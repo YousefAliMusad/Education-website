@@ -161,8 +161,8 @@ nav .menu {
 }
 .sec1 {
     background-color:#444852;
-    height: calc(100vh - 80px);
-    margin-top: 80px;
+    height:100vh;
+    /* margin-top: 80px; */
     position: relative;
     display: flex;
     align-items: center;
